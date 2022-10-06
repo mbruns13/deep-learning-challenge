@@ -67,31 +67,23 @@ The nonprofit foundation Alphabet Soup wants a tool that can help it select the 
     - In my first attempt at optimization, I thought reducing the number of features might improve accuracy, so I raised the cutoff points for the "other" bin in the 'APPLICATION_TYPE' and 'CLASSIFICATION' columns.  <br> 
         ![Screenshot of application type bins from Attempt #1](Resources/images/attempt1_application_type.png)  <br> 
         ![Screenshot of classification bins from Attempt #1](Resources/images/attempt1_classification.png)  <br> 
-        
         This change reduced the number of features from 43 to 38. I kept the setup of my model the same, but this yielded a slightly lower accuracy score of 72.6%.  <br> 
-        
         ![Screenshot of accuracy score from Attempt #1](Resources/images/attempt1_accuracy.png)
     
 - **Attempt #2:**
         
-    - Since the decrease in number of features had led to a slight decrease in accuracy, I returned to the original number of features in my second model attempt. In this version, I thought that adding more hidden layers could increase the model's ability to deal with complexities and could therefore increase accuracy. I added a third and fourth hidden layer, keeping the same activation function and number of neurons as I had used for the second hidden layer. <br> 
-        
+    - Since the decrease in number of features had led to a slight decrease in accuracy, I returned to the original number of features in my second model attempt. In this version, I thought that adding more hidden layers could increase the model's ability to deal with complexities and could therefore increase accuracy. I added a third and fourth hidden layer, keeping the same activation function and number of neurons as I had used for the second hidden layer. <br>
         ![Screenshot of model from Attempt #2](Resources/images/attempt2_model.png) <br>
-        
         This model ended up with a basically identical accuracy score as what came out of my original model (72.9%).
-        
         ![Screenshot of accuracy score from Attempt #2](Resources/images/attempt2_accuracy.png)
     
 - **Attempt #3:**
         
     - In my final attempt, I used the same cutoff points for the "other" bin in the 'APPLICATION_TYPE' column, but lowered the cutoff point for the 'CLASSIFICATION' column. <br>
-    
     ![Screenshot of classification bins from Attempt #3](Resources/images/attempt3_classification.png)  <br> 
-
     This increased the number of features to 49. I kept the four hidden layers used in Attempt #2, but increased the first layer's neurons to 100, changed the second layer's activation function to tanh, and increased that layer's neurons to 80. <br>
     ![Screenshot of model from Attempt #3](Resources/images/attempt3_model.png)<br>
     This led to a slight increase to 73% accuracy. <br> 
-        
     ![Screenshot of accuracy score from Attempt #3](Resources/images/attempt3_accuracy.png)
 
 
