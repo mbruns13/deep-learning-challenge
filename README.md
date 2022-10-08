@@ -8,15 +8,15 @@ The nonprofit foundation Alphabet Soup wants a tool that can help it select the 
 
 ### Data Preprocessing
 
-- **What variable(s) are the target(s) for your model?**
+#### What variable(s) are the target(s) for your model?
     
-    * I used the binary variable "IS_SUCCESSFUL" as the target for my model. This meant the model would be predicting whether or not the money was used successfully.
+- I used the binary variable "IS_SUCCESSFUL" as the target for my model. This meant the model would be predicting whether or not the money was used successfully.
         
-- **What variable(s) are the features for your model?**
+#### What variable(s) are the features for your model?
     
-    * The variables I used as features for my model were: APPLICATION_TYPE, AFFILIATION, CLASSIFICATION, USE_CASE, ORGANIZATION, STATUS, INCOME_AMT, SPECIAL_CONSIDERATIONS,and ASK_AMT. 
+- The variables I used as features for my model were: APPLICATION_TYPE, AFFILIATION, CLASSIFICATION, USE_CASE, ORGANIZATION, STATUS, INCOME_AMT, SPECIAL_CONSIDERATIONS,and ASK_AMT. 
     
-    * As some of these were categorical variables, the complete list of features after using pd.get_dummies() to encode categorical variables was: 
+- As some of these were categorical variables, the complete list of features after using pd.get_dummies() to encode categorical variables was: 
        'STATUS', 'ASK_AMT', 'APPLICATION_TYPE_Other', 'APPLICATION_TYPE_T10',
        'APPLICATION_TYPE_T19', 'APPLICATION_TYPE_T3', 'APPLICATION_TYPE_T4',
        'APPLICATION_TYPE_T5', 'APPLICATION_TYPE_T6', 'APPLICATION_TYPE_T7',
@@ -36,9 +36,9 @@ The nonprofit foundation Alphabet Soup wants a tool that can help it select the 
        'INCOME_AMT_25000-99999', 'INCOME_AMT_50M+', 'INCOME_AMT_5M-10M',
        'SPECIAL_CONSIDERATIONS_N', 'SPECIAL_CONSIDERATIONS_Y'
        
-- **What variable(s) should be removed from the input data because they are neither targets nor features?**
+#### What variable(s) should be removed from the input data because they are neither targets nor features?
     
-    * I removed the variables 'EIN' and 'NAME' from the input data, as they were identification values that would have no meaninful impact on the model.
+- I removed the variables 'EIN' and 'NAME' from the input data, as they were identification values that would have no meaninful impact on the model.
 
 
 ### Compiling, Training, and Evaluating the Model
