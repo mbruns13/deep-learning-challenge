@@ -88,5 +88,7 @@ The nonprofit foundation Alphabet Soup wants a tool that can help it select the 
 
 
 ## Summary: 
-*Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and then explain your recommendation.*
 
+The deep learning model was moderately successful in predicting the target ("IS_SUCCESSFUL"). Despite several modifications, I was not able to get my model to the requested 75% accuracy score.
+
+Adding layers did not seem to meaningfully impact the model, but the accuracy score did go down when I decreased the number of features. Perhaps decreasing the "other" bins even more would continue to raise the accuracy score. I would also be interested in seeing how a random forest model might handle this data, given that much of it is categorical.
